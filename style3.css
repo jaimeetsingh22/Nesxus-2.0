@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+body {
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    box-sizing: border-box;
+    background:linear-gradient(to right top,skyblue, white,skyblue);
+  }
+
+  /* Header styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+    /* width: 100%; */
+  }
+  .navbar{
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+  }
+  .navbar .img img{
+      object-fit: cover;
+      background-repeat: no-repeat;
+      height: 50px;
+      width: 50px;
+      display: inline-block;
+      border-radius: 100%;
+  }
+  
+  .navbar .img{
+      height: 100%;
+      width: 60px;
+  }
+
+  .navbar .img span{
+      font-weight: 800;
+      display: inline-block;
+      margin-top: 5px;
+  }
+  nav ul{
+      list-style: none;
+      display: flex;
+      align-items: center;
+  }
+  
+  nav a{
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+  }
+  /* skills menu*/
+
+  .navbar .menu{
+      position: relative;
+  }
+  
+  .items{
+      position: absolute;
+      flex-direction: column;
+      top: 25px;
+      padding: 0px;
+      background-color: #333;
+  }
+  
+  .navbar ul li ul li{
+      text-align:center ;
+      width: 100%;
+      display: none;
+  }
+  
+  .navbar ul li:hover ul li {
+      display: block;
+      z-index: 555;
+      
+  }
+  .navbar ul li a:hover {
+      background-color: rgb(19, 128, 231);
+  }
+  .items li a{
+      display: block;
+      
+  }
+  .navbar ul li ul li a:hover {
+      background-color: #a8eb12;
+      color:#000;
+  }
+
+
+.container{
+    max-width: 1200px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box{
+    margin-top: 20px;
+    text-align: center;
+    /* width: 25%; */
+}
+
+.box h2{
+    border-bottom: 2px solid black;
+    margin-bottom: 2px;
+}
+iframe{
+    margin-top: 5px;
+}
+
+.footer{
+    background-color: #000;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 1.2rem;
+    font-weight: 600;
+}
+
+@media (max-width:850px){
+    nav.navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav.navbar ul{
+        margin-top: 10px;
+    }
+}
